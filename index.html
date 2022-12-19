@@ -24,7 +24,26 @@
 </head>
 
 <body>
-
+    <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+        <a class="navbar-brand" href="#">Amanda Delgadillo</a>
+        <div class="links">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Recent Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Connect With Me</a>
+                </li>
+            </ul>
+        </div>
+        
+      </nav>
     <header>
         <div class="wave">
             <div class="container header-container">
@@ -109,7 +128,7 @@
     </section>
     <section class="container">
         <div class="card custom-card">
-            <div class="card-body">
+            <div class="card-body" id="about">
                 <span class="card-icon">
                     <i class="fas fa-code"></i>
                 </span>
@@ -142,7 +161,7 @@
 
 
     <!-- TIMELINE -->
-    <section class="container">
+    <section class="container" id="projects">
         <h1 class="title">Recent Projects</h1>
         <h3 class="subtitle">These are just a few of the projects I have collaborated on.</h3>
     </section>
@@ -150,6 +169,25 @@
 
     <div class="container">
         <div id="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-star fa-align"></i>
+                </div>
+                <div class="timeline-content right">
+                    <h2>CAPSTONE PROJECT: Affordable Housing in San Diego</h2>
+                    <p>
+                        The purpose and goal of this project is to determine where is San Diego would residents benefit the most from low-moderate
+income housing broken down by zipcode. We used a K-means model to analyze several different categories. The categories
+that we chose to focus on are accessibility to transit, food(markets), hospitals, and parks. To get this data we obtained census flat files
+for the population, income, and living percentages, performed web-scraping for the hospital information, utilized the San Diego transit
+geoJSON data, as well as used Google's PlacesAPI for the markets and parks. We preprocessed the all data, compiled, trained, and
+evaluated the data to get our results.
+                    </p>
+                    <a href="https://github.com/tsmtruong/final-project" class="btn"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://tsmtruong.github.io/final-project/" class="btn"><i class="fas fa-tv"></i> GitHub Page</a>
+
+                </div>
+            </div>
             <div class="timeline-item">
                 <div class="timeline-icon">
                     <i class="fas fa-star fa-align"></i>
@@ -245,7 +283,7 @@
 
 
     <!-- EDUCATION -->
-    <section class="container education-container">
+    <section class="container education-container" id="education">
         <h1 class="title">Education </h1>
         <article class="education-item">
             <h3 class="subtitle">University of California, San Diego</h3>
@@ -273,7 +311,7 @@
 
     <!-- FOOTER -->
     <section class="container-dark">
-        <div class="container">
+        <div class="container" id="contact">
             <h1>Contact Me</h1>
             <h3 class="intro subtitle">
             <!--<a<a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a> -->
